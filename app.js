@@ -43,6 +43,7 @@ app.get('/detail', function (req, res) {
 
 // --- Integracion mercadopago Rutas---
 
+
 app.get("/failure", function (request, res) {
   res.render("failure", request.query);
 });
@@ -86,7 +87,7 @@ app.post("/create_preference" , function (req, res) {
           id: "2023",
           title: req.body.title,
           description: "Dispositivo móvil de Tienda e-commerce",
-          picture_url: ("https://ecommerce-liart-eight.vercel.app" + req.body.img),
+          picture_url: ("http://localhost:3000" + req.body.img),
           quantity: Number(req.body.unit),
           unit_price: Number(req.body.price),
           currency_id: "MXN",
@@ -107,9 +108,9 @@ app.post("/create_preference" , function (req, res) {
       },
     },
       back_urls: {
-        "success": "https://ecommerce-liart-eight.vercel.app/success",
-        "failure": "https://ecommerce-liart-eight.vercel.app/failure",
-        "pending": "https://ecommerce-liart-eight.vercel.app/pending"
+        "success": "http://localhost:3000/success",
+        "failure": "http://localhost:3000/failure",
+        "pending": "http://localhost:3000/pending"
       },
       auto_return: "approved",
       payment_methods: {
@@ -120,13 +121,13 @@ app.post("/create_preference" , function (req, res) {
       ],
       excluded_payment_types: [   
         {
-          id: "tickets",    
+          id: "tickets",    // atm
         },
       ],
       
       installments: 6,
     },
-    //notification_url: `http://localhost:3000/notifications`,  
+    //notification_url: `http://localhost:3000/notifications`, 
     external_reference: "direccion@gruponucleon.com",
     expires: false,
     
@@ -136,7 +137,7 @@ app.post("/create_preference" , function (req, res) {
  mercadopago.preferences.create(preference)
       .then(function (response) {
     let id = response.body.id;
-   res.redirect(response.body.init_point)  
+   res.redirect(response.body.init_point) 
     })
     .catch(function (error) {
         console.log(error);
