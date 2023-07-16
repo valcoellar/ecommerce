@@ -107,9 +107,9 @@ app.post("/create_preference" , function (req, res) {
       },
     },
       back_urls: {
-        "success": "http://localhost:3000/success",
-        "failure": "http://localhost:3000/failure",
-        "pending": "http://localhost:3000/pending"
+        "success": "https://ecommerce-liart-eight.vercel.app/success",
+        "failure": "https://ecommerce-liart-eight.vercel.app/failure",
+        "pending": "https://ecommerce-liart-eight.vercel.app/pending"
       },
       auto_return: "approved",
       payment_methods: {
