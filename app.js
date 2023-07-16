@@ -86,7 +86,7 @@ app.post("/create_preference" , function (req, res) {
           id: "2023",
           title: req.body.title,
           description: "Dispositivo móvil de Tienda e-commerce",
-          picture_url: ("http://localhost:3000" + req.body.img),
+          picture_url: ("https://ecommerce-liart-eight.vercel.app" + req.body.img),
           quantity: Number(req.body.unit),
           unit_price: Number(req.body.price),
           currency_id: "MXN",
