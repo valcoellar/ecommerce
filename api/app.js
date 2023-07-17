@@ -23,7 +23,7 @@ let port = process.env.PORT || 3000
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 app.use(express.static('assets'));
-app.use('/assets', express.static(__dirname + '/assets'));
+app.use('/api/assets', express.static(__dirname + '/assets'));
 
 
 app.use(express.urlencoded({ extended: false }));
@@ -32,41 +32,41 @@ app.use(cors());
 
 
  
-app.get('/', function (req, res) {
+app.get('/api', function (req, res) {
     res.render('home');
 });
 
-app.get('/detail', function (req, res) {
+app.get('/api/detail', function (req, res) {
     res.render('detail', req.query);
 });
 
 
 // --- Integracion mercadopago Rutas---
 
-app.get("/failure", function (request, res) {
-  res.render("failure", request.query);
+app.get("/api/failure", function (request, res) {
+  res.render("/api/failure", request.query);
 });
 
-app.get("/pending", function (request, res) {
+app.get("/api/pending", function (request, res) {
   res.render("pending", request.query);
 });
 
-app.get("/success", function (request, res) {
+app.get("/api/success", function (request, res) {
   res.render("success", request.query);
 });
 
-app.get("/checkout", function (request, res) {
+app.get("/api/checkout", function (request, res) {
   res.render("checkout", request.query);
 });
 
-app.post("/notifications" , function (request, res) {
+app.post("/api/notifications" , function (request, res) {
   console.log(request.body);
   res.status(200).send("Ok");
 });
 
  
 // <<<
-app.get('/feedback', function (req, res) {
+app.get('/api/feedback', function (req, res) {
   res.json({
     Payment: req.query.payment_id,
     Status: req.query.status,
@@ -75,7 +75,7 @@ app.get('/feedback', function (req, res) {
 });
 // <<<
 
-app.post("/create_preference" , function (req, res) {
+app.post("/api/create_preference" , function (req, res) {
 
 // ******************************************
   
