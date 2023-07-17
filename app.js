@@ -84,7 +84,7 @@ app.post("/create_preference" , function (req, res) {
           id: "2023",
           title: req.body.title,
           description: "Dispositivo móvil de Tienda e-commerce",
-          picture_url: ("http://localhost:3000" + req.body.img),
+          picture_url: ("https://valcoellar-mp-commerce-nodejs.onrender.com" + req.body.img),
           quantity: Number(req.body.unit),
           unit_price: Number(req.body.price),
           currency_id: "MXN",
@@ -105,9 +105,9 @@ app.post("/create_preference" , function (req, res) {
       },
     },
       back_urls: {
-        "success": "http://localhost:3000/success",
-        "failure": "http://localhost:3000/failure",
-        "pending": "http://localhost:3000/pending"
+        "success": "https://valcoellar-mp-commerce-nodejs.onrender.com/success",
+        "failure": "https://valcoellar-mp-commerce-nodejs.onrender.com/failure",
+        "pending": "https://valcoellar-mp-commerce-nodejs.onrender.com/pending"
       },
       auto_return: "approved",
       payment_methods: {
