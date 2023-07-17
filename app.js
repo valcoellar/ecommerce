@@ -23,7 +23,7 @@ let port = process.env.PORT || 3000
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 app.use(express.static('assets'));
-app.use('/api/assets', express.static(__dirname + '/api/assets'));
+app.use('/assets', express.static(__dirname + '/assets'));
 
 
 app.use(express.urlencoded({ extended: false }));
@@ -42,7 +42,6 @@ app.get('/detail', function (req, res) {
 
 
 // --- Integracion mercadopago Rutas---
-
 
 app.get("/failure", function (request, res) {
   res.render("failure", request.query);
@@ -77,7 +76,6 @@ app.get('/feedback', function (req, res) {
 // <<<
 
 app.post("/create_preference" , function (req, res) {
-   
 
 // ******************************************
   
@@ -127,6 +125,7 @@ app.post("/create_preference" , function (req, res) {
       
       installments: 6,
     },
+
     //notification_url: `http://localhost:3000/notifications`, 
     external_reference: "direccion@gruponucleon.com",
     expires: false,
