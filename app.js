@@ -93,7 +93,7 @@ app.post("/create_preference" , function (req, res) {
       payer: {
       name: "Lalo",
       surname: "Landa",
-     email: "test_user_94708656@testuser.com",
+    // email: "test_user_94708656@testuser.com",
       phone: {
         area_code: "52",
         number: 5550545687,
@@ -124,7 +124,7 @@ app.post("/create_preference" , function (req, res) {
       
       installments: 6,
     },
-    //notification_url: `http://valcoellar.ddns.net/notifications`, 
+    //notification_url: `http://localhost:3000/notifications`, 
     external_reference: "direccion@gruponucleon.com",
     expires: false,
     
