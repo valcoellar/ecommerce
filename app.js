@@ -83,7 +83,7 @@ app.post("/create_preference" , function (req, res) {
       let preference = {
       items: [
         {
-          id: 2023,
+          id: Number(2023),
           title: req.body.title,
           description: "Dispositivo móvil de Tienda e-commerce",
           picture_url: ("https://valcoellar-mp-commerce-nodejs.onrender.com" + req.body.img),
