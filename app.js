@@ -8,8 +8,8 @@ const mercadopago = require("mercadopago");
 
 // Agrega credenciales
 mercadopago.configure({
-  access_token: "TEST-6202646115041007-062016-9322de8bbd5cf43151af36c8d2e0fcd5-184206934",
-  integrator_id: "dev_24c65fb163bf11ea96500242ac130004"
+  access_token: "TEST-2926550097213535-092911-9f95049df86420b3055add7ae6e0e56e-1160956296",
+  integrator_id: "dev_24c65fb163bf11ea96500242ac130004",
 });
 
 // ------------------------------
