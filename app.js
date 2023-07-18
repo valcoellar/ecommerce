@@ -126,7 +126,7 @@ app.post("/create_preference" , function (req, res) {
       
       installments: 6,
     },
-    notification_url: `https://valcoellar-mp-commerce-nodejs.onrender.com/notifications`, 
+    notification_url: `https://valcoellar-mp-commerce-nodejs.onrender.com/feedback`, 
     external_reference: "direccion@gruponucleon.com",
     expires: false,
     
