@@ -8,7 +8,7 @@ const mercadopago = require("mercadopago");
 
 // Agrega credenciales
 mercadopago.configure({
-  access_token: "APP_USR-2926550097213535-092911-5eded40868803c83f12e9eef1afa99fa-1160956296",
+  access_token: "TEST-6202646115041007-062016-9322de8bbd5cf43151af36c8d2e0fcd5-184206934",
   integrator_id: "dev_24c65fb163bf11ea96500242ac130004"
 });
 
@@ -95,8 +95,8 @@ app.post("/create_preference" , function (req, res) {
       payer: {
       name: "Lalo",
       surname: "Landa",
-     // email: "test_user_94708656@testuser.com",
-      email: "direccion@gruponucleon.com",
+    email: "test_user_94708656@testuser.com",
+      //email: "direccion@gruponucleon.com",
       phone: {
         area_code: "52",
         number: 5550545687,
