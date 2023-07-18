@@ -12,6 +12,8 @@ mercadopago.configure({
   integrator_id: "dev_24c65fb163bf11ea96500242ac130004",
 });
 
+mercadopago.configurations.setAccessToken("APP_USR-2926550097213535-092911-5eded40868803c83f12e9eef1afa99fa-1160956296");
+
 // ------------------------------
 
 let exphbs  = require('express-handlebars');
