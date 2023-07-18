@@ -8,9 +8,8 @@ const mercadopago = require("mercadopago");
 
 // Agrega credenciales
 mercadopago.configure({
-  access_token: "APP_USR-8709825494258279-092911-227a84b3ec8d8b30fff364888abeb67a-1160706432",
+  access_token: "APP_USR-2926550097213535-092911-5eded40868803c83f12e9eef1afa99fa-1160956296",
   integrator_id: "dev_24c65fb163bf11ea96500242ac130004"
-
 });
 
 // ------------------------------
@@ -106,10 +105,6 @@ app.post("/create_preference" , function (req, res) {
         street_number: 123,
         zip_code: "09060",
       },
-      identification: {
-                type: "DNI",
-                number: "40677577"
-            },
     },
       back_urls: {
         "success": "https://valcoellar-mp-commerce-nodejs.onrender.com/success",
