@@ -89,7 +89,7 @@ app.post("/create_preference" , function (req, res) {
           picture_url: ("https://valcoellar-mp-commerce-nodejs.onrender.com" + req.body.img),
           quantity: Number(req.body.unit),
           unit_price: Number(req.body.price),
-          currency_id: "MXN",
+          currency_id: "USD",
         }
       ],
       payer: {
