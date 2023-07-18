@@ -95,7 +95,7 @@ app.post("/create_preference" , function (req, res) {
       payer: {
       name: "Lalo",
       surname: "Landa",
-    email: "test_user_94708656@testuser.com",
+   // email: "test_user_94708656@testuser.com",
       //email: "direccion@gruponucleon.com",
       phone: {
         area_code: "52",
