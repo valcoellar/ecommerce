@@ -1,5 +1,5 @@
 
-const mp = new MercadoPago('TEST-179e1cbc-8f9d-4b85-944b-112d3c67838e');
+const mp = new MercadoPago('TEST-60a16dec-f63c-416f-8ae2-7294431a4c00');
 const bricksBuilder = mp.bricks();
 
 /*
