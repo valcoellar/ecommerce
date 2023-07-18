@@ -83,13 +83,13 @@ app.post("/create_preference" , function (req, res) {
       let preference = {
       items: [
         {
-          id: "2023",
+          id: 2023,
           title: req.body.title,
           description: "Dispositivo móvil de Tienda e-commerce",
           picture_url: ("https://valcoellar-mp-commerce-nodejs.onrender.com" + req.body.img),
           quantity: Number(req.body.unit),
           unit_price: Number(req.body.price),
-          currency_id: "USD",
+          currency_id: "MXN",
         }
       ],
       payer: {
@@ -99,11 +99,11 @@ app.post("/create_preference" , function (req, res) {
       //email: "direccion@gruponucleon.com",
       phone: {
         area_code: "52",
-        number: 5550545687,
+        number: Number(5550545687),
       },
       address: {
         street_name: "calle falsa",
-        street_number: 123,
+        street_number: Number(123),
         zip_code: "09060",
       },
     },
