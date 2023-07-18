@@ -1,7 +1,7 @@
-
+/*
 const mp = new MercadoPago('APP_USR-a68157fb-5513-4dc7-adbf-709ba3e46766');
 const bricksBuilder = mp.bricks();
-
+*/
 
 /*
 
