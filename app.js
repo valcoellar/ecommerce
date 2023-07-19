@@ -8,12 +8,12 @@ const mercadopago = require("mercadopago");
 
 // Agrega credenciales
 mercadopago.configure({
-  access_token: "APP_USR-3286321117173152-071216-45436ead7c317785e200fc8fa0ef8f8a-1420083556",
+  access_token: "TEST-6202646115041007-062016-9322de8bbd5cf43151af36c8d2e0fcd5-184206934",
   "x-integrator_id": "dev_24c65fb163bf11ea96500242ac130004",
   integrator_id: 'dev_24c65fb163bf11ea96500242ac130004'
 });
 
-mercadopago.configurations.setAccessToken("APP_USR-3286321117173152-071216-45436ead7c317785e200fc8fa0ef8f8a-1420083556");
+mercadopago.configurations.setAccessToken("TEST-6202646115041007-062016-9322de8bbd5cf43151af36c8d2e0fcd5-184206934");
 
 // ------------------------------
 
