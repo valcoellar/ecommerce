@@ -139,7 +139,7 @@ app.post("/create_preference" , function (req, res) {
     
  
     };
-
+try {
  mercadopago.preferences.create(preference)
       .then(function (response) {
     let id = response.body.id;
@@ -148,6 +148,8 @@ app.post("/create_preference" , function (req, res) {
     .catch(function (error) {
         console.log(error);
       })
+}
+}
  
 
 // ******************************************
