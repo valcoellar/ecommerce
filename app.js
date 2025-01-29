@@ -7,13 +7,7 @@ const cors = require("cors");
 const mercadopago = require("mercadopago");
 
 // Agrega credenciales
-mercadopago.configure({
-  access_token: "APP_USR-6202646115041007-062016-8fc5d15c06564621af10e2c97e9ceca9-184206934",
-  "x-integrator_id": "dev_24c65fb163bf11ea96500242ac130004",
-  integrator_id: 'dev_24c65fb163bf11ea96500242ac130004'
-});
 
-mercadopago.configurations.setAccessToken("APP_USR-6202646115041007-062016-8fc5d15c06564621af10e2c97e9ceca9-184206934");
 
 // ------------------------------
 
